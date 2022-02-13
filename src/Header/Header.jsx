@@ -2,12 +2,16 @@ import React from 'react'
 import classes from './Header.module.css'
 import logo from '../images/logo.png'
 
-const Header = () => {
+const Header = ({hidden}) => {
   return (
-    <header className={classes.appHeader}>
+    <header className={hidden ? classes.appHeader + ' ' + classes.headerHidden : classes.appHeader}>
         <div className={classes.headerLeft}>
           <div className={classes.headerLogo}>
-            <img src={logo} alt='' height={60} width={64}/>
+            <img className={hidden 
+                            ? classes.headerImageHidden
+                            : classes.headerImage} 
+                            src={logo} 
+                            alt=''/>
           </div>  
           <div className={classes.headerMenuItem}>
               <span className={classes.headerDivider}></span>

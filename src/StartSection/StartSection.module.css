@@ -1,7 +1,7 @@
 .startSection {
     width: 100%;
     height: calc(100vh - calc(62px + 32px));
-    border: 3px solid black;
+    /* border: 3px solid black; */
     margin-top: calc(62px + 32px);
     display: flex;
     justify-content: space-evenly;
@@ -9,7 +9,7 @@
 }
 
 .startRight {
-    margin-left: -92.5px;
+    margin-left: -93px;
     margin-top: -8px;
 }
 
@@ -27,6 +27,5 @@
 
 .startSectionContent {
     height: 70%;
-    width: 70%;
-    
+    width: 70%; 
 }
