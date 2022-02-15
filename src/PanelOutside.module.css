@@ -1,0 +1,108 @@
+.gameDesHeader {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gameDesHeader h1{
+    color: white;
+    font-size: 4em;
+    font-weight: 400;
+}
+
+.gameDesHeader img{
+    border-radius: 5px;
+    margin: 0 20px
+}
+
+.gameDescription {
+    color: white;
+    font-size: 1.2em;
+}
+
+.gameDescription ul {
+    list-style-type: circle;
+}
+.gameDescription a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.gameDescription a:visited{
+    color: lightskyblue;
+}
+
+.imageStack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+}
+
+.gameScreenTop {
+    grid-column: 1 / span 8;
+    grid-row: 1; 
+    padding-top: 20%; 
+    z-index: 1; 
+}
+
+.gameScreenBottom {
+    grid-column: 4 / -1;
+    grid-row: 1; 
+}
+
+.infoKamen {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    /* background-color: ; */
+}
+
+.infoKamen + p {
+    padding-inline: 6%;
+    font-size: 1.3em;
+}
+
+.aboutUsInfo {
+    color: white;
+    padding: 0 4%;
+    font-size: 1.1em;
+}
+
+.aboutUsInfo h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.card {
+    text-align: justify;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.advantagesInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+}

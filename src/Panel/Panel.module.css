@@ -1,6 +1,25 @@
 .wrapBlock {
     height: 500px;
     width: 100%;
-    padding: 80px 0;
-    border-top:2px solid rebeccapurple;
+    padding: 60px 0;
+    /* border-top:2px solid rebeccapurple; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.panelLeft {
+    padding-left: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.panelRight {
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

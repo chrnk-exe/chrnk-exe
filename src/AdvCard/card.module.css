@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 10px;
+}
+
+.card p {
+    font-size: 1.1em;
+    margin-left: 10px;
+    word-break: break-word;
+}
+
+.captions{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.caption {
+    font-weight: 700;
+}
