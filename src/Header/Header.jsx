@@ -18,27 +18,22 @@ const Header = ({hidden}) => {
           </div>
           <div className={classes.headerMenu}>
             <div className={classes.headerMenuItem}>
-                Menu Item 1
+                Home
             </div>
             <div className={classes.headerMenuItem}>
-                Menu Item 2
+                Games
             </div>
             <div className={classes.headerMenuItem}>
-                Menu Item 3
-            </div>
-            <div className={classes.headerMenuItem}>
-                Menu Item 4
+                Web Site
             </div>
           </div>
         </div>
         <div className={classes.headerRight}>
-            <div> 
-                <button className={classes.headerContactButton}>
-                    Contact Us!
-                </button>
+            <div className={classes.headerMenuItem}> 
+                {'<>'}Russian
             </div>
             <div className={classes.headerMenuItem}>
-                Something else
+                {'<>'}English
             </div>
         </div>
       </header>

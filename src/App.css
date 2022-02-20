@@ -5,3 +5,13 @@
   margin: 0;
 }
 
+footer {
+  height: 70px;
+  background-color: #5A5A5A;
+  /* border-top: 1px solid black; */
+  box-sizing: 0 0 10px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #FFFFF1;
+}

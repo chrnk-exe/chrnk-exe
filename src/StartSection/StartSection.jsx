@@ -19,12 +19,12 @@ const StartSection = () => {
           <div className={classes.kamenLogo}>
             <Fade left>
               <div className={classes.startLeft}>
-                <img height={260} src={left} alt=''/>
+                <img height={220} src={left} alt=''/>
               </div>
             </Fade>
             <Fade right>
               <div className={classes.startRight}>
-                <img height={268} src={right}  alt=''/>
+                <img height={228} src={right}  alt=''/>
               </div>
             </Fade>
           </div>
@@ -32,7 +32,7 @@ const StartSection = () => {
             {
               letters.map((letter, index) => (
                 <Fade delay={2000 + index * 75} bottom cascade key={letter}>
-                  <img src={letter} alt='' height={96}/>
+                  <img src={letter} alt='' height={86}/>
                 </Fade>
               ))
             }

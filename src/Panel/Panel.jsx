@@ -1,15 +1,14 @@
 import React from 'react'
 import classes from './Panel.module.css'
 
-const Panel = ({left, right, background, flip=false, children}) => {
-  console.log(flip)
-  console.log(children, children !== undefined)
+const Panel = ({left, right, background, flip=false, children, font}) => {
   if(children === undefined){
     if(!flip)
   return (
     <section className={classes.wrapBlock} style={{
       backgroundColor: background?.color,
-      
+      color: font?.color ? font.color : '#FFFFF1',
+      fontSize: font?.size
     }}>
       <div className={classes.panelLeft}>
         {left}
@@ -22,7 +21,8 @@ const Panel = ({left, right, background, flip=false, children}) => {
   else return (
     <section className={classes.wrapBlock} style={{
       backgroundColor: background?.color,
-      
+      color: font?.color ? font.color : '#FFFFF1',
+      fontSize: font?.size
     }}>
       <div className={classes.panelLeft}>
         {right}
@@ -36,6 +36,8 @@ const Panel = ({left, right, background, flip=false, children}) => {
     return (
       <section className={classes.wrapBlock} style={{
         backgroundColor: background?.color,
+        color: font?.color ? font.color : '#FFFFF1',
+        fontSize: font?.size
       }}>
         {children} 
       </section>

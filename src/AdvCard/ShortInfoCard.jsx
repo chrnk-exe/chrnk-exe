@@ -1,12 +1,13 @@
 import React from 'react'
 import classes from './card.module.css'
 
-const ShortInfoCard = ({icon,caption, info}) => {
+const ShortInfoCard = ({icon,caption, info, italicCap, imgHeight=80, imgWidth=80}) => {
   return (
     <div className={classes.card}>
-        <img src={icon} height={64} width={64} alt='advantage icon'/>
+        <img src={icon} height={imgHeight} width={imgWidth} alt='advantage icon'/>
         <div className={classes.captions}>
             <p className={classes.caption}>{caption}</p>
+            <p className={classes.btwCaption}>{italicCap}</p>
             <p>{info}</p>
         </div>
     </div>

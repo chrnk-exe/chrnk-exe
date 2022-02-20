@@ -54,7 +54,7 @@ img {
 
 .headerMenuItem {
     border-bottom: 1px solid transparent;
-    margin: 0 1em;
+    margin: 0 2em;
     color:rgba(0, 0, 0, 0.7);
     transition: all .1s ease-in-out;
     padding-bottom: 2px;

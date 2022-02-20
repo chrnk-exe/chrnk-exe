@@ -1,27 +1,42 @@
 .card {
     display: flex;
     justify-content: flex-start;
-    text-align: left;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
     min-width: 200px;
     max-width: 400px;
     margin: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0,0, 0.3);
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .card p {
     font-size: 1.1em;
     margin-left: 10px;
     word-break: break-word;
+    text-align: center;
 }
 
 .captions{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
 }
 
 .caption {
     font-weight: 700;
+    margin: 5px 0;
+}
+/* 
+img {
+    border: 1px solid #FFFFF1;
+    border-radius: 5px;
+} */
+
+.btwCaption {
+    font-style: italic;
 }
