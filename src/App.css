@@ -6,12 +6,13 @@
 }
 
 footer {
-  height: 70px;
+  height: 62px;
   background-color: #5A5A5A;
   /* border-top: 1px solid black; */
   box-sizing: 0 0 10px rgba(0,0,0,0.15);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 4%;
   align-items: center;
   color: #FFFFF1;
 }

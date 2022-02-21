@@ -43,7 +43,7 @@ const StartSection = () => {
         <div className={classes.startSectionContent}>
         <Fade left delay={1200} duration={1500} distance={200 + 'px'}>
             <h1>KAMEN</h1>
-            <h2>Corporation</h2>
+            {/* <h2>Corporation</h2> */}
             <p>
             We are game and application developers from Russia. 
             Our goal is to create incredible, fantastic, fun and high-quality games!

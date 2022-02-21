@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Fade, Bounce } from 'react-reveal'
 import classes from './CustomForm.module.css'
 
 const GAME = 'Game'
@@ -59,7 +60,9 @@ const CustomForm = () => {
                                     <option value={MULTIPLAYER}>Multiplayer Game</option>
                                     <option value={OTHER}>Other...</option>
                                 </select>
-                                <input style={{opacity: formOptions.gameType === OTHER ? 1 : 0}} className={classes.formInput} value={formOptions.gameDescription} onChange={e => setOption({...formOptions, gameDescription: e.target.value})} placeholder={'Game genre'}/>
+                                <Bounce when={formOptions.gameType === OTHER} duration={500}>
+                                    <input style={{opacity: formOptions.gameType === OTHER ? 1 : 0}} className={classes.formInput} value={formOptions.gameDescription} onChange={e => setOption({...formOptions, gameDescription: e.target.value})} placeholder={'Game genre'}/>
+                                </Bounce>    
                             </div>
                             )
                         case SITE:
