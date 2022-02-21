@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react';
 import {Fade, Flip} from 'react-reveal'
 
-import classes from './App.css';
+import classes from './App.module.css';
 import styles from './PanelOutside.module.css'
 
 import Header from './Header/Header';
@@ -31,6 +31,7 @@ import Money from './images/whymeIcons/money.png'
 import time from './images/whymeIcons/time.png'
 
 import whiteLofo from './images/whiteLogo.png'
+import FAQ from './images/faqs.svg'
 
 
 function App() {
@@ -209,27 +210,35 @@ function App() {
       </Panel>
 
       {/* Pre - Footer */}
-      <Panel left={(
-        <div>
-          <img src={whiteLofo} alt='white footer logo'/>
-        </div>
-      )}
-      right={(
-        <div className={styles.gameDescription}>
-          <ul>
-            <li><a href="https://goo.su/aRHl" target='_blank' rel="noreferrer">Google Play</a></li>
-            <li><a href="https://goo.su/azpR" target='_blank' rel="noreferrer">Fiverr</a></li>
-          </ul>
-        </div>
-      )} background={{color: "#D14D48"}}/>
       <footer className={classes.footer}>
-        <div>
-          <p>Ⓒ 2019 - 2022 Kamen. All rights reserved.</p>
+        <div style={{display: 'flex'}} className={classes.footerMain}>
+          <div>
+            <img src={whiteLofo} alt=''/>
+          </div>
+          <div>
+            <h1>Follow Us!</h1>
+            <span className={classes.followUsUnderline}></span>
+            <ul className={classes.social}>
+              <li>Google Play</li>
+              <li>Youtube</li>
+              <li>Fiverr</li>
+            </ul>
+          </div> 
         </div>
-        <div>
-          <a>Privacy Notice    </a>
-          <a>Terms of Service</a>
+        <div className={classes.Footer}>
+          <Fade left>
+            <div>
+              <p>Ⓒ 2019 - 2022 Kamen. All rights reserved.</p>
+            </div>
+          </Fade>        
+          <Fade right>
+            <div>
+              <a href={'#'} style={{marginRight: 10 + 'px'}}>Privacy Notice</a>
+              <a href={'#'} >Terms of Service</a>
+            </div>
+          </Fade>
         </div>
+        
       </footer>
     </div>
   );
