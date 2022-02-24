@@ -33,6 +33,17 @@ import time from './images/whymeIcons/time.png'
 import whiteLofo from './images/whiteLogo.png'
 import FAQ from './images/faqs.svg'
 
+//icons
+import tiktok from './images/sicons/tiktok.svg'
+import fiver from './images/sicons/fiver.svg'
+import telega from './images/sicons/tg.svg'
+import yt from './images/sicons/yt.svg'
+import gp from './images/sicons/1.svg'
+import fiver2 from './images/sicons/2.svg'
+
+const socials = {
+  
+}
 
 function App() {
   const [hidden, setHidden] = useState(false)
@@ -56,11 +67,6 @@ function App() {
           <Fade top cascade>
             <h2>WHAT IS A KAMEN CORPORATION?</h2>
           </Fade>
-          <div className={styles.card}>
-              <Fade top cascade>
-                A few years ago, two friends decided to team up to create unique games for the whole world.
-              </Fade>
-          </div>
           <div className={styles.infoKamen}>
             <Fade bottom distance={'40px'}> 
               <ShortInfoCard 
@@ -94,20 +100,18 @@ function App() {
             <h2>WHY CHOOSE US?</h2>
           </Fade>
           <div className={styles.advantages}>
-            <Fade bottom distance={'20px'} duration={800}>
+            <Fade left distance={'20px'} duration={800}>
               <ShortInfoCard icon={Exp} caption={'3 years in game development'} info={'Constantly learning and creating beautiful things for you. Our experience allows us to create colorful and high-quality games in a short time.'}/>
             </Fade>
-            <Fade bottom distance={'20px'} duration={800}>
+            <Fade right distance={'20px'} duration={800}>
               <ShortInfoCard icon={YoungGuys} caption={'Young and creative'} info={'Any idea you have in our hands is sure to win the love of the players. And we will help you to implement it in the best possible way'}/>
             </Fade>
-            <Fade bottom distance={'20px'} duration={800}>
+            <Fade left distance={'20px'} duration={800}>
               <ShortInfoCard icon={Money} caption={'Good prices'} info={'Individual approach and high-quality games at a price lower than that of competitors will allow us to achieve maximum results in the shortest possible time.'}/>
             </Fade>
-            <Flip>
-              <Fade right distance={'40px'} duration={1200}>
-                <ShortInfoCard icon={time} caption={'Speed and quality'} info={"Don't waste your time, trust us and enjoy the result that will exceed your expectations. We are ready to implement your most daring ideas"} />
-              </Fade>
-            </Flip>
+            <Fade right distance={'20px'} duration={800}>
+              <ShortInfoCard icon={time} caption={'Speed and quality'} info={"Don't waste your time, trust us and enjoy the result that will exceed your expectations. We are ready to implement your most daring ideas"} />
+            </Fade>
           </div>
         </div>
       </Panel>
@@ -211,34 +215,42 @@ function App() {
 
       {/* Pre - Footer */}
       <footer className={classes.footer}>
-        <div style={{display: 'flex'}} className={classes.footerMain}>
+        
+        <div className={classes.footerMain}>
           <div>
-            <img src={whiteLofo} alt=''/>
+            <img style={{marginRight: 30 + 'px'}} src={whiteLofo} height={90} alt=''/>
           </div>
           <div>
-            <h1>Follow Us!</h1>
-            <span className={classes.followUsUnderline}></span>
+            <h1>Follow us!</h1>
+            {/* <span className={classes.followUsUnderline}></span> */}
             <ul className={classes.social}>
-              <li>Google Play</li>
-              <li>Youtube</li>
-              <li>Fiverr</li>
+              <li><a href='https://play.google.com/store/apps/dev?id=7504598280677274956&hl=ru&gl=US' target='_blank'><img src={gp} height={35}/></a></li>
+              <li><a href='https://www.youtube.com/channel/UCHn17pcpX9tfE5PyKzaXMSw/featured' target='_blank'><img src={yt} height={35}/></a></li>
+              <li><a href="https://vm.tiktok.com/ZSec3oTQX/" target='_blank'><img src={tiktok} height={35}/></a></li>
+              <li><a href='https://t.me/NiKNexT_T' target='_blank'><img src={telega} height={35}/></a></li>
+              <li><a href="https://www.fiverr.com/s2/fc22ea6a2a" target='_blank'><img src={fiver} height={35}/></a></li>
+
+              {/* <li><a href='https://play.google.com/store/apps/dev?id=7504598280677274956&hl=ru&gl=US' target='_blank'>Google Play</a></li>
+              <li><a href='https://www.youtube.com/channel/UCHn17pcpX9tfE5PyKzaXMSw/featured' target='_blank'>YouTube</a></li>
+              <li><a href='https://t.me/NiKNexT_T' target='_blank'>Telegram</a></li>
+              <li><a href="https://vm.tiktok.com/ZSec3oTQX/" target='_blank'>TikTok</a></li>
+              <li><a href="https://www.fiverr.com/s2/fc22ea6a2a" target='_blank'>Fiverr</a></li> */}
             </ul>
           </div> 
         </div>
+
         <div className={classes.Footer}>
-          <Fade left>
-            <div>
+          <Fade>
+           
               <p>Ⓒ 2019 - 2022 Kamen. All rights reserved.</p>
-            </div>
+              <div>
+                <a href={'#'} style={{marginRight: 10 + 'px'}}>Privacy Notice</a>
+                <a href={'#'} >Terms of Service</a>
+              </div>
+            
           </Fade>        
-          <Fade right>
-            <div>
-              <a href={'#'} style={{marginRight: 10 + 'px'}}>Privacy Notice</a>
-              <a href={'#'} >Terms of Service</a>
-            </div>
-          </Fade>
         </div>
-        
+
       </footer>
     </div>
   );
